@@ -10,6 +10,7 @@ if(codigo==1){
     KW = (KW) / 1000;
 }
 KW = KW * horas * 30;
-valor = KW * 0.9;
+let taxa = number(prompt("\nEscreva o valor taxa por KWH: R$"))
+valor = KW * taxa;
 console.log("\nSeu valores são: \nNome do objeto: ",objeto,"\nO valor pro mês: R$",valor.toFixed(2),"\nO valor em KWH: ",KW);
 
