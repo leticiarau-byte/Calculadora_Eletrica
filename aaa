@@ -1,0 +1,4 @@
+- input > unidade(a,i,ohm,w,v)
+- input > valor numerico(450)
+- input > qual conversão?
+conversão >  da unidade principal>>> m (mili)

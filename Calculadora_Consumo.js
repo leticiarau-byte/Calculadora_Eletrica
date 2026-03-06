@@ -1,5 +1,5 @@
-
-alert("---Calculadora Eletrônica---")
+function CONSUMO(){
+alert("---Calculadora Consumo---")
 let objeto = prompt("\nMe escreva seu objeto: ");
 let valor
 let KW 
@@ -14,3 +14,4 @@ let taxa = number(prompt("\nEscreva o valor taxa por KWH: R$"))
 valor = KW * taxa;
 console.log("\nSeu valores são: \nNome do objeto: ",objeto,"\nO valor pro mês: R$",valor.toFixed(2),"\nO valor em KWH: ",KW);
 
+}
