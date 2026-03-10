@@ -34,5 +34,12 @@ function FAIXA(){
         let faixa15 = prompt("\nDigite a cor da faixa de tolerância(sem espaço e em letras minúsculas): ");
         let resultado = (((cores[faixa11].cor * 100) + cores[faixa12].cor * 10 + cores[faixa13].cor) * cores[faixa14].mult) * ((cores[faixa15].tolerancia + 100) / 100);
         console.log("\nO valor da sua resistência é: ", resultado," ohms.");
+
+        let chegar = parseInt(prompt("\nEscreva a unidade que deseja converter o valor da resistência: \n0-Giga(G)\n1-Mega(M)\n2-Kilo(k)\n3-Base\n4-Mili(m)\n5-Micro(µ)\n6-Nano(n)"));
+        let valor = Number(prompt("\nDigite o valor: "));
+        let potencia = [10**9, 10**6, 10**3, 10**0, 10**-3, 10**-6, 10**-9]
+        
+        let resultado2 = valor * (potencia[3] / potencia[chegar]);
+        console.log("\nSeu valor é de: ",resultado2," ",un);
     } 
     }
